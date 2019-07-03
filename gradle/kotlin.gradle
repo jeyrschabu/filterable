@@ -1,0 +1,14 @@
+apply plugin: "nebula.kotlin"
+apply from: "${project.rootDir}/gradle/ktlint.gradle"
+
+compileKotlin {
+  kotlinOptions {
+    languageVersion = "1.3"
+  }
+}
+
+compileTestKotlin {
+  kotlinOptions {
+    languageVersion = "1.3"
+  }
+}
